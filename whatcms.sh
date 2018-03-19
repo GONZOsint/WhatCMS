@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #SET YOUR WHATCMS API KEY HERE
-cmsapikey=
+cmsapikey=157de12e36b7d537764f3e7c80ce69a5440be19bab9359c3921a7931314fea5fed18d1
 
 #Banner function
 banner()
@@ -38,6 +38,23 @@ apikeycheck()
 		echo ""
 		exit 0
 	fi
+}
+
+#TrashDel
+trashdel()
+{
+	echo " " > tmpver
+	rm tmpver
+	echo " " > tmptools2
+	rm tmptools2
+	echo " " > tmpgit
+	rm tmpgit
+	echo " " > tmptools
+	rm tmptools
+	echo " " > tmp
+	rm tmp
+	echo " " > cmstmp
+	rm cmstmp
 }
 
 #DomainCheck function
@@ -129,10 +146,14 @@ cmstoolscheck()
 	 	;;
 	    n|N)
 			echo ""
+			echo -e " \e[1;36mBye bye.\e[0m"
+			echo ""
+			trashdel
 			exit 0
 	    ;;	 
 	    *)
 			echo ""
+			trashdel
 			exit 0
 		;;
 	esac
@@ -386,7 +407,7 @@ cmstoolsgit()
 	echo ""
 	cat tmptools | cut -d "-" -f 1 | grep -v "_" > tmptools2
 	sed -i -e "1d;2d" tmptools2
-	echo -e " \e[1m[-] Enter the tool ID\e[0m \e[1;36m(choose only one)\e[0m:"
+	echo -e " \e[1m[-] Enter the tool ID\e[0m:"
 	read -s -a id
 	idver=$(echo ${id[@]} | grep -o " " | wc -l)
 	#idver=$(echo $idver + 1 | bc)
@@ -405,6 +426,7 @@ cmstoolsgit()
 				if [[  $tmpverr == "1" ]];then
 					echo ${!line} | cut -d "-" -f 4 > tmpgit
 					github=$(cat tmpgit)
+					echo ""
 					git clone $github /root/cmstools/$line
 					echo ""
 					echo -e " \e[1;36m[+] Tool cloned in\e[0m \e[1;96m/root/cmstools/$line.\e[0m"
@@ -418,18 +440,6 @@ cmstoolsgit()
 			done		
 			
 	done < tmptools2
-}
-
-#TrashDel
-trashdel()
-{
-	rm tmpver
-	rm tmptools2
-	echo " " > tmpgit
-	rm tmpgit
-	rm tmptools
-	rm tmp
-	rm cmstmp
 }
 
 #Help function
@@ -504,13 +514,14 @@ WAScan=' WAScan - 42 - Analyze Tool - https://github.com/m4ll0k/WAScan - Drupal,
 RedHawk=' RedHawk - 43 - Analyze Tool - https://github.com/Tuhinshubhra/RED_HAWK - Wordpress, Drupal, Joomla, Magento'
 HostileSBF=' HostileSBF - 44 - Analyze Tool - https://github.com/nahamsec/HostileSubBruteforcer - AWS, Github, Heroku, shopify, tumblr, squarespace'
 
-#-----------------------------------------------
+#-------------------------------------------------------------------------------------------------------------------------------
 banner
 apikeycheck
 domaincheck $1
 if [[ -z $1 ]];then
 	helpf
 	echo ""
+	trashdel
 	exit 0
 else
 	if [[ $verify != "0" ]];then
@@ -525,7 +536,6 @@ else
 		cmstoolsaskdown
 		cmstoolscheck
 		cmstoolsgit
-		trashdel
 	else
 		if [[ $1 != "" ]];then
 			if [[ $1 == "--tools" ]];then
@@ -543,8 +553,12 @@ else
 				echo ""
 			else
 				echo ""
+				trashdel
 				exit 0
 			fi
 		fi
 	fi
 fi
+
+trashdel
+exit 0
