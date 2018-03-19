@@ -49,11 +49,6 @@ domaincheck()
 		verify=$(echo $1 | grep -c -P '^(?!:\/\/)(?=.{1,255}$)((.{1,63}\.){1,127}(?![0-9]*$)[a-z0-9-]+\.?.*)')
 		if [ $verify != 0 ]; then
 			echo ""
-		else
-			echo ""
-			echo -e " \e[38;5;196;1m[#] Enter valid domain.\e[0m"
-			echo ""
-			exit 0
 		fi
 	fi
 }
@@ -511,42 +506,45 @@ HostileSBF=' HostileSBF - 44 - Analyze Tool - https://github.com/nahamsec/Hostil
 
 #-----------------------------------------------
 banner
+apikeycheck
+domaincheck $1
 if [[ -z $1 ]];then
 	helpf
 	echo ""
 	exit 0
 else
-	if [[ $1 != "" ]];then
-		if [[ $1 == "--tools" ]];then
-			echo ""
-			toolspack
-			echo ""
-			exit 0
-		elif [[ $1 == "--help" ]] || [[ $1 == "-h" ]];then
-			helpf
-			echo ""
-			exit 0
-		else
-			echo ""
-			echo -e " \e[38;5;196;1m[#] Bad parameter.\e[0m"
-			echo ""
-			exit 0
+	if [[ $verify != "0" ]];then
+		whatcms $1
+		if [[ $2 == "-wh" ]];then
+			sleep 9
+			whohost $1
+		fi
+		cmstoolsask
+		cmstoolscheck
+		cmstools
+		cmstoolsaskdown
+		cmstoolscheck
+		cmstoolsgit
+		trashdel
+	else
+		if [[ $1 != "" ]];then
+			if [[ $1 == "--tools" ]];then
+				echo ""
+				toolspack
+				echo ""
+				exit 0
+			elif [[ $1 == "--help" ]] || [[ $1 == "-h" ]];then
+				helpf
+				echo ""
+				exit 0
+			elif [[ $1 != "--help" ]] || [[ $1 != "--tools" ]] || [[ $1 != "-h" ]]; then
+				echo ""
+				echo -e " \e[38;5;196;1m[#] Invalid domain or parameter\e[0m"
+				echo ""
+			else
+				echo ""
+				exit 0
+			fi
 		fi
 	fi
 fi
-apikeycheck
-domaincheck $1
-whatcms $1
-if [[ $2 == "-wh" ]];then
-	sleep 9
-	whohost $1
-fi
-cmstoolsask
-cmstoolscheck
-cmstools
-cmstoolsaskdown
-cmstoolscheck
-cmstoolsgit
-trashdel
-
-exit 0
