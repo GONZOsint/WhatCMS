@@ -9,7 +9,7 @@ Whatcms.sh can currently detect the use of more than **330 different CMS** appli
 
 
 ## Use
-[![asciicast](https://asciinema.org/a/i8sLqaXdiCypInxEcI87EVGle.png)](https://asciinema.org/a/i8sLqaXdiCypInxEcI87EVGle)
+![alt](https://media.giphy.com/media/2xPMQtvkDOLg49dgGt/giphy.gif)
 
 
 ``Usage: ``*``./whatcms.sh example.com``*
