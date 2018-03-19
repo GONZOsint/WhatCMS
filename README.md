@@ -4,8 +4,11 @@ CMS Detection and Exploit Kit based on **[Whatcms.org](https://whatcms.org)** AP
 ## Introduction
 Whatcms.sh can currently detect the use of more than **330 different CMS** applications and services to later indicate a list of valid security audit tools for the detected CMS.
 
+You need the whatcms.org API to use the tool:
 + [Get API key](https://whatcms.org/Subscriptions)
-+ [Detected CMSs](https://whatcms.org/Content-Management-Systems)
+
+
+
 
 
 ## Use
@@ -19,7 +22,13 @@ Whatcms.sh can currently detect the use of more than **330 different CMS** appli
 --tools     Display tools information
 ```
 
-## Included tools
+## Information
+
+### Detected CMSs
+
+[CMS list](https://whatcms.org/Content-Management-Systems)
+
+### Included tools
 
 TOOLS | UTILITY | REPO URL
 --- | --- | ---
