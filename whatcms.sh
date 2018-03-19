@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #SET YOUR WHATCMS API KEY HERE
-cmsapikey=157de12e36b7d537764f3e7c80ce69a5440be19bab9359c3921a7931314fea5fed18d1
+cmsapikey=
 
 #Banner function
 banner()
