@@ -7,13 +7,7 @@ Whatcms.sh can currently detect the use of more than **330 different CMS** appli
 You need the whatcms.org API to use the tool:
 + [Get API key](https://whatcms.org/Subscriptions)
 
-
-
-
-
 ## Use
-![alt](https://media.giphy.com/media/2xPMQtvkDOLg49dgGt/giphy.gif)
-
 
 ``Usage: ``*``./whatcms.sh example.com``*
 ```
@@ -21,6 +15,8 @@ You need the whatcms.org API to use the tool:
 -wh     Check hosting details
 --tools     Display tools information
 ```
+
+![alt](https://media.giphy.com/media/2xPMQtvkDOLg49dgGt/giphy.gif)
 
 ## Information
 
