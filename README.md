@@ -11,8 +11,8 @@ You need the whatcms.org API to use the tool:
 
 ``Usage: ``*``./whatcms.sh example.com``*
 ```
--h     Display help message
--wh     Check hosting details
+-h          Display help message
+-wh         Check hosting details
 --tools     Display tools information
 ```
 
