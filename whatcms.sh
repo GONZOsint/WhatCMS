@@ -381,8 +381,8 @@ cmstools()
 		echo "     __________________-____-________________________" >> tmptools
 	fi
 	if [[ $rhw == 1 ]]; then
-		echo "     "$RedHawk | cut -d "-" -f 1,2,3 >> tmptools
-		echo "     __________________-____-________________________" >> tmptools
+		echo "     "$RedHawk | cut -d "-" -f 1,3 >> tmptools
+		echo "     __________________-________________________" >> tmptools
 	fi
 	if [[ $hostsbf == 1 ]]; then
 		echo "     "$HostileSBF | cut -d "-" -f 1,2,3 >> tmptools
