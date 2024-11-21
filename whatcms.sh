@@ -214,179 +214,179 @@ cmstools()
 	echo ""
 	echo "" > tmptools
 	echo -e " \e[1m           TOOL        - ID -         UTILITY\e[0m" >> tmptools
-	echo "     __________________-____-________________________" >> tmptools
+	echo "     --" >> tmptools
 
 	if [[ $xbf == 1 ]];then
 		echo "     "$XBruteForcer | cut -d "-" -f 1,2,3 >> tmptools
-		echo "     __________________-____-________________________" >> tmptools
+		echo "     --" >> tmptools
 	fi
 	if [[ $CMSs4 == 1 ]]; then
 		echo "     "$CMSsc4n | cut -d "-" -f 1,2,3 >> tmptools
-		echo "     __________________-____-________________________" >> tmptools
+		echo "     --" >> tmptools
 	fi
 	if [[ $CMSon == 1 ]]; then
 		echo "     "$CoMisSion | cut -d "-" -f 1,2,3 >> tmptools
-		echo "     __________________-____-________________________" >> tmptools
+		echo "     --" >> tmptools
 	fi
 	if [[ $droop == 1 ]]; then
 		echo "     "$droopescan | cut -d "-" -f 1,2,3 >> tmptools
-		echo "     __________________-____-________________________" >> tmptools
+		echo "     --" >> tmptools
 	fi
 	if [[ $map == 1 ]]; then
 		echo "     "$CMSmap | cut -d "-" -f 1,2,3 >> tmptools
-		echo "     __________________-____-________________________" >> tmptools
+		echo "     --" >> tmptools
 	fi
 	if [[ $joom == 1 ]]; then
 		echo "     "$JoomScan | cut -d "-" -f 1,2,3 >> tmptools
-		echo "     __________________-____-________________________" >> tmptools
+		echo "     --" >> tmptools
 	fi
 	if [[ $bee == 1 ]]; then
 		echo "     "$beecms | cut -d "-" -f 1,2,3 >> tmptools
-		echo "     __________________-____-________________________" >> tmptools
+		echo "     --" >> tmptools
 	fi
 	if [[ $dumb == 1 ]]; then
 		echo "     "$Dumb0 | cut -d "-" -f 1,2,3 >> tmptools
-		echo "     __________________-____-________________________" >> tmptools
+		echo "     --" >> tmptools
 	fi
 	if [[ $vbs == 1 ]]; then
 		echo "     "$VBScan | cut -d "-" -f 1,2,3 >> tmptools
-		echo "     __________________-____-________________________" >> tmptools
+		echo "     --" >> tmptools
 	fi
 	if [[ $joom2 == 1 ]]; then
 		echo "     "$JoomlaScan | cut -d "-" -f 1,2,3 >> tmptools
-		echo "     __________________-____-________________________" >> tmptools
+		echo "     --" >> tmptools
 	fi
 	if [[ $c5 == 1 ]]; then
 		echo "     "$c5scan | cut -d "-" -f 1,2,3 >> tmptools
-		echo "     __________________-____-________________________" >> tmptools
+		echo "     --" >> tmptools
 	fi
 	if [[ $t3 == 1 ]]; then
 		echo "     "$T3scan | cut -d "-" -f 1,2,3 >> tmptools
-		echo "     __________________-____-________________________" >> tmptools
+		echo "     --" >> tmptools
 	fi
 	if [[ $pup == 1 ]]; then
 		echo "     "$Puppet | cut -d "-" -f 1,2,3 >> tmptools
-		echo "     __________________-____-________________________" >> tmptools
+		echo "     --" >> tmptools
 	fi
 	if [[ $mood == 1 ]]; then
 		echo "     "$moodlescan | cut -d "-" -f 1,2,3 >> tmptools
-		echo "     __________________-____-________________________" >> tmptools
+		echo "     --" >> tmptools
 	fi
 	if [[ $spip == 1 ]]; then
 		echo "     "$SPIPScan | cut -d "-" -f 1,2,3 >> tmptools
-		echo "     __________________-____-________________________" >> tmptools
+		echo "     --" >> tmptools
 	fi
 	if [[ $wphu == 1 ]]; then
 		echo "     "$WPHunter | cut -d "-" -f 1,2,3 >> tmptools
-		echo "     __________________-____-________________________" >> tmptools
+		echo "     --" >> tmptools
 	fi
 	if [[ $wpsek == 1 ]]; then
 		echo "     "$WPSeku | cut -d "-" -f 1,2,3 >> tmptools
-		echo "     __________________-____-________________________" >> tmptools
+		echo "     --" >> tmptools
 	fi
 	if [[ $acdr == 1 ]]; then
 		echo "     "$acdrupal | cut -d "-" -f 1,2,3 >> tmptools
-		echo "     __________________-____-________________________" >> tmptools
+		echo "     --" >> tmptools
 	fi
 	if [[ $plo == 1 ]]; then
 		echo "     "$Plown | cut -d "-" -f 1,2,3 >> tmptools
-		echo "     __________________-____-________________________" >> tmptools
+		echo "     --" >> tmptools
 	fi
 	if [[ $pyf == 1 ]]; then
 		echo "     "$pyfiscan | cut -d "-" -f 1,2,3 >> tmptools
-		echo "     __________________-____-________________________" >> tmptools
+		echo "     --" >> tmptools
 	fi
 	if [[ $con == 1 ]]; then
 		echo "     "$conscan | cut -d "-" -f 1,2,3 >> tmptools
-		echo "     __________________-____-________________________" >> tmptools
+		echo "     --" >> tmptools
 	fi
 	if [[ $cmsss == 1 ]]; then
 		echo "     "$CMSScanner | cut -d "-" -f 1,2,3 >> tmptools
-		echo "     __________________-____-________________________" >> tmptools
+		echo "     --" >> tmptools
 	fi
 	if [[ $cmse == 1 ]]; then
 		echo "     "$cmsexplorer | cut -d "-" -f 1,2,3 >> tmptools
-		echo "     __________________-____-________________________" >> tmptools
+		echo "     --" >> tmptools
 	fi
 	if [[ $wpsc == 1 ]]; then
 		echo "     "$WPScan | cut -d "-" -f 1,2,3 >> tmptools
-		echo "     __________________-____-________________________" >> tmptools
+		echo "     --" >> tmptools
 	fi
 	if [[ $xplsc == 1 ]]; then
 		echo "     "$XPL | cut -d "-" -f 1,2,3 >> tmptools
-		echo "     __________________-____-________________________" >> tmptools
+		echo "     --" >> tmptools
 	fi
 	if [[ $jme == 1 ]]; then
 		echo "     "$JoomME | cut -d "-" -f 1,2,3 >> tmptools
-		echo "     __________________-____-________________________" >> tmptools
+		echo "     --" >> tmptools
 	fi
 	if [[ $wme == 1 ]]; then
 		echo "     "$WordPressME | cut -d "-" -f 1,2,3 >> tmptools
-		echo "     __________________-____-________________________" >> tmptools
+		echo "     --" >> tmptools
 	fi
 	if [[ $cef == 1 ]]; then
 		echo "     "$CMSEF | cut -d "-" -f 1,2,3 >> tmptools
-		echo "     __________________-____-________________________" >> tmptools
+		echo "     --" >> tmptools
 	fi
 	if [[ $lcms == 1 ]]; then
 		echo "     "$Lotus | cut -d "-" -f 1,2,3 >> tmptools
-		echo "     __________________-____-________________________" >> tmptools
+		echo "     --" >> tmptools
 	fi
 	if [[ $bmcms == 1 ]]; then
 		echo "     "$BadMod | cut -d "-" -f 1,2,3 >> tmptools
-		echo "     __________________-____-________________________" >> tmptools
+		echo "     --" >> tmptools
 	fi
 	if [[ $moo == 1 ]]; then
 		echo "     "$MooScan | cut -d "-" -f 1,2,3 >> tmptools
-		echo "     __________________-____-________________________" >> tmptools
+		echo "     --" >> tmptools
 	fi
 	if [[ $mob == 1 ]]; then
 		echo "     "$M0B | cut -d "-" -f 1,2,3 >> tmptools
-		echo "     __________________-____-________________________" >> tmptools
+		echo "     --" >> tmptools
 	fi
 	if [[ $lmfi == 1 ]]; then
 		echo "     "$LetMeFuckIt | cut -d "-" -f 1,2,3 >> tmptools
-		echo "     __________________-____-________________________" >> tmptools
+		echo "     --" >> tmptools
 	fi
 	if [[ $mcms == 1 ]]; then
 		echo "     "$magescan | cut -d "-" -f 1,2,3 >> tmptools
-		echo "     __________________-____-________________________" >> tmptools
+		echo "     --" >> tmptools
 	fi
 	if [[ $pcms == 1 ]]; then
 		echo "     "$PRESTA | cut -d "-" -f 1,2,3 >> tmptools
-		echo "     __________________-____-________________________" >> tmptools
+		echo "     --" >> tmptools
 	fi
 	if [[ $scms == 1 ]]; then
 		echo "     "$sc | cut -d "-" -f 1,2,3 >> tmptools
-		echo "     __________________-____-________________________" >> tmptools
+		echo "     --" >> tmptools
 	fi
 	if [[ $ekcms == 1 ]]; then
 		echo "     "$ektrone | cut -d "-" -f 1,2,3 >> tmptools
-		echo "     __________________-____-________________________" >> tmptools
+		echo "     --" >> tmptools
 	fi
 	if [[ $lrs == 1 ]]; then
 		echo "     "$LiferayScan | cut -d "-" -f 1,2,3 >> tmptools
-		echo "     __________________-____-________________________" >> tmptools
+		echo "     --" >> tmptools
 	fi
 	if [[ $ifl == 1 ]]; then
 		echo "     "$InfoLeak | cut -d "-" -f 1,2,3 >> tmptools
-		echo "     __________________-____-________________________" >> tmptools
+		echo "     --" >> tmptools
 	fi
 	if [[ $jlavs == 1 ]]; then
 		echo "     "$joomlavs | cut -d "-" -f 1,2,3 >> tmptools
-		echo "     __________________-____-________________________" >> tmptools
+		echo "     --" >> tmptools
 	fi
 	if [[ $was == 1 ]]; then
 		echo "     "$WAScan | cut -d "-" -f 1,2,3 >> tmptools
-		echo "     __________________-____-________________________" >> tmptools
+		echo "     --" >> tmptools
 	fi
 	if [[ $rhw == 1 ]]; then
 		echo "     "$RedHawk | cut -d "-" -f 1,2,3 >> tmptools
-		echo "     __________________-____-________________________" >> tmptools
+		echo "     --" >> tmptools
 	fi
 	if [[ $hostsbf == 1 ]]; then
 		echo "     "$HostileSBF | cut -d "-" -f 1,2,3 >> tmptools
-		echo "     __________________-____-________________________" >> tmptools
+		echo "     --" >> tmptools
 	fi
 	column -t -s "-" tmptools
 	echo ""
